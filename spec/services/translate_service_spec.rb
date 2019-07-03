@@ -6,7 +6,7 @@ describe TranslateService do
     it 'translate to english' do
       text = 'Ola meu amigo, tudo bem?'
 
-      @translateService = TranslateService.new({ 'text': text }, 'translate_to_english')
+      @translateService = TranslateService.new({ 'text' => text }, 'translate_to_english')
 
       response = @translateService.call()
       expect(response).to match('Hello my dear friend, how are you?')
@@ -15,7 +15,7 @@ describe TranslateService do
     it 'translate from english' do
       text = 'long time no see'
 
-      @translateService = TranslateService.new({ 'text': text }, 'translate_from_english')
+      @translateService = TranslateService.new({ 'text' => text }, 'translate_from_english')
 
       response = @translateService.call()
       expect(I18n.transliterate(response)).to match('faz tempo que nao vejo')

@@ -6,7 +6,7 @@ class TranslateService
     @url = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
     @key = 'trnsl.1.1.20190703T142045Z.7903233305877a41.a2ecb704b8f4bab76ca2272245df0b4c90c32694'
     @action = action
-    @text = I18n.transliterate(params[:text])
+    @text = I18n.transliterate(params['text'])
   end
 
   def call
