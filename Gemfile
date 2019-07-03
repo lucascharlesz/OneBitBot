@@ -8,6 +8,7 @@ gem 'rake'
 gem 'pg_search', '~> 2.0.1'
 gem 'httparty'
 gem 'byebug'
+gem 'i18n'
 
 group :development do
   gem 'tux'
