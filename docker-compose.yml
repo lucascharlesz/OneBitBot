@@ -10,7 +10,6 @@ services:
     depends_on:
       - "postgres"
     build: .
-    command: bash start.sh
     ports:
       - "9292:9292"
     volumes:
