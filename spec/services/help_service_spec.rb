@@ -12,4 +12,4 @@ describe HelpService do
       expect(response).to match('Perguntas e Respostas')
     end
   end
-end
+end 
